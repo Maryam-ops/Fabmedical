@@ -7,8 +7,8 @@ on:
     - main
     paths:
     - 'content-web/**'
-    # - web.deployment.yml
-    # - web.service.yml
+     - web.deployment.yml
+     - web.service.yml
 
   # Configure workflow to also support triggering manually
   workflow_dispatch:
@@ -19,7 +19,8 @@ env:
   resourceGroupName: 'fabmedical-687816'
   clusterName: 'fabmedical-687816'
   containerRegistryName: 'fabmedical687816'
-  containerRegistry: 'fabmedical687816.azurecr.io'
+  co
+ntainerRegistry: 'fabmedical687816.azurecr.io'
   dockerfilePath: './content-web'
   tag: '${{ github.run_id  }}'
 
